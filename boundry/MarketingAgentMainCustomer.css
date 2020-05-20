@@ -1,0 +1,68 @@
+#frame{
+	-fx-background-color: #46494C;
+}
+#main{
+	-fx-background-color: #DCDCDD;
+}
+#sidebar {
+ 	-fx-background-color: #4C5C68;
+ 	-fx-background-radius: 0;
+ 	-fx-text-fill: #DCDCDD;
+ 	-fx-font-weight: bold;
+}
+
+#sidebar:hover {
+    -fx-background-color: #1985A1;
+    -fx-scale-y: 1.1;
+}
+
+#sidebar:pressed {
+	-fx-background-color: #1985A1;
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+    -fx-font-weight: 900;
+}
+
+#logout {
+	-fx-background-color: #cc0000;
+ 	-fx-background-radius: 25;
+ 	-fx-font-weight: bold;
+	-fx-text-fill: white;
+}
+#logout:hover {
+    -fx-background-color: #ff3333;
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+#logout:pressed {
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+    -fx-font-weight: 900;
+}
+#customer_tool {
+	-fx-background-color: #5C6C78;
+ 	-fx-background-radius: 8;
+ 	-fx-text-fill: #DCDCDD;
+ 	-fx-font-weight: bold;
+}
+#customer_tool:hover {
+    -fx-background-color: #1985A1;
+}
+#customer_tool:pressed {
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+    -fx-font-weight: 900;
+}
+#Regular_button {
+    -fx-background-color: white;
+    -fx-background-radius: 25;
+    -fx-font-weight: bold;
+}
+#Regular_button:hover {
+    -fx-background-color: #EEEEEE;
+}
+#Regular_button:pressed {
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+    -fx-font-weight: 900;
+}

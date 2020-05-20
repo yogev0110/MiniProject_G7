@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.common.controllers.MarketingAgentCustomersMainController">
+   <left>
+      <VBox id="frame" alignment="TOP_CENTER" prefHeight="567.0" prefWidth="173.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="116.0" prefWidth="174.0">
+               <children>
+                  <Button id="sidebar" fx:id="menu_btn" alignment="BOTTOM_LEFT" mnemonicParsing="false" onMouseClicked="#menu_btn_clicked" prefHeight="83.0" prefWidth="176.0" text="Menu">
+                     <graphic>
+                        <ImageView fitHeight="73.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/icons8-menu-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="110.0" prefWidth="174.0">
+               <children>
+                  <Button id="sidebar" fx:id="notification_btn" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#notification_btn_clicked" prefHeight="83.0" prefWidth="176.0" text="Notifications">
+                     <graphic>
+                        <ImageView fitHeight="68.0" fitWidth="62.0" onMouseClicked="#_clicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/icons8-computer-chat-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="112.0" prefWidth="174.0">
+               <children>
+                  <Button id="sidebar" fx:id="customers_btn" alignment="BOTTOM_LEFT" mnemonicParsing="false" onMouseClicked="#customers_btn_clicked" prefHeight="83.0" prefWidth="176.0" style="-fx-background-color: #1985A1;" text="Customers">
+                     <graphic>
+                        <ImageView fitHeight="73.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/icons8-customer-128.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="110.0" prefWidth="174.0">
+               <children>
+                  <Button id="sidebar" fx:id="sales_btn" alignment="BOTTOM_LEFT" mnemonicParsing="false" onMouseClicked="#sales_btn_clicked" prefHeight="83.0" prefWidth="176.0" text="Sales">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="73.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/icons8-land-sales-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></VBox>
+   </left>
+   <top>
+      <AnchorPane id="frame" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="107.0" fitWidth="109.0" layoutX="23.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="10.0">
+               <image>
+                  <Image url="@/MyFuelLogoFinal.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="745.0" prefHeight="120.0" prefWidth="176.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="120.0" prefWidth="176.0">
+                     <children>
+                        <Button id="logout" fx:id="logout_btn" layoutX="100.0" layoutY="81.0" mnemonicParsing="false" onMouseClicked="#logout_btn_clicked" text="Log Out" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="81.0" />
+                        <Label alignment="CENTER" layoutX="3.0" layoutY="34.0" text="Hello,Yogev Cohen" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="3.0" layoutY="14.0" text="Marketing Agent" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="30.0">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button id="Regular_button" fx:id="help_btn" layoutX="14.0" layoutY="81.0" mnemonicParsing="false" onMouseClicked="#help_btn_clicked" prefHeight="25.0" prefWidth="64.0" text="Help" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="403.0" layoutY="8.0" prefHeight="111.0" prefWidth="210.0" AnchorPane.topAnchor="8.0" />
+            <Label layoutX="171.0" layoutY="43.0" text="Customers" textFill="WHITE" AnchorPane.topAnchor="43.0">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane id="main" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <TableView fx:id="main_table" layoutX="36.0" layoutY="41.0" prefHeight="340.0" prefWidth="701.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="28.0">
+              <columns>
+                <TableColumn prefWidth="116.33334350585938" text="First name" />
+                <TableColumn prefWidth="127.33331298828125" text="Last name" />
+                  <TableColumn prefWidth="117.66668701171875" text="ID" />
+                  <TableColumn prefWidth="243.3333740234375" text="Email" />
+                  <TableColumn minWidth="0.0" prefWidth="95.66668701171875" text="Last 4 digits CC" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" layoutX="478.0" layoutY="388.0" prefHeight="53.0" prefWidth="265.0" spacing="20.0" AnchorPane.rightAnchor="28.0">
+               <children>
+                  <Button id="Regular_button" fx:id="main_add_btn" mnemonicParsing="false" onMouseClicked="#main_add_btn_clicked" prefHeight="25.0" prefWidth="67.0" text="Add" />
+                  <Button id="Regular_button" fx:id="main_select_btn" mnemonicParsing="false" onMouseClicked="#main_select_btn_clicked" prefHeight="25.0" prefWidth="67.0" text="Select" />
+                  <Button id="Regular_button" fx:id="main_edit_btn" mnemonicParsing="false" onMouseClicked="#main_select_btn_clicked" prefHeight="25.0" prefWidth="67.0" text="Edit" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="11.0" layoutY="456.0" spacing="10.0" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0">
+               <children>
+                  <Button id="customer_tool" fx:id="main_btn" mnemonicParsing="false" onMouseClicked="#main_btn_clicked" prefHeight="60.0" prefWidth="130.0" style="-fx-background-color: #1985A1;" text="Main" />
+                  <Button id="customer_tool" fx:id="customer_info_btn" mnemonicParsing="false" onMouseClicked="#customer_info_btn_clicked" prefHeight="60.0" prefWidth="130.0" text="Customer info" />
+                  <Button id="customer_tool" fx:id="vehicle_info_btn" mnemonicParsing="false" onMouseClicked="#vehicle_info_btn_clicked" prefHeight="60.0" prefWidth="130.0" text="Vehicle info" textAlignment="CENTER" wrapText="true" />
+                  <Button id="customer_tool" fx:id="update_purchase_pattern_btn" mnemonicParsing="false" onMouseClicked="#update_purchase_pattern_btn_clicked" prefHeight="60.0" prefWidth="130.0" text="Update purchase pattern" textAlignment="CENTER" wrapText="true" />
+                  <Button id="customer_tool" fx:id="add_membership_btn" mnemonicParsing="false" onMouseClicked="#add_membership_btn_clicked" prefHeight="60.0" prefWidth="130.0" text="Add membership" />
+               </children>
+            </HBox>
+            <Button id="Regular_button" fx:id="search_btn" layoutX="197.0" layoutY="3.0" mnemonicParsing="false" onMouseClicked="#search_btn_clicked" text="Search" />
+            <TextField layoutX="40.0" layoutY="4.0" promptText="Enter Customer ID" />
+            <Label fx:id="customer_name_label" layoutX="339.0" layoutY="6.0" text="Meni Rachmanov" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

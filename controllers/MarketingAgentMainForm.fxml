@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.common.controllers.MainMarketingAgentController">
+   <left>
+      <VBox id="frame" alignment="TOP_CENTER" prefHeight="567.0" prefWidth="173.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="116.0" prefWidth="174.0">
+               <children>
+                  <Button id="sidebar" fx:id="menu_btn" alignment="BOTTOM_LEFT" mnemonicParsing="false" onMouseClicked="#menu_btn_clicked" prefHeight="83.0" prefWidth="176.0" style="-fx-background-color: #1985A1;" text="Menu">
+                     <graphic>
+                        <ImageView fitHeight="73.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Gui_Prototype/icons8-menu-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="110.0" prefWidth="174.0">
+               <children>
+                  <Button id="sidebar" fx:id="notification_btn" alignment="BOTTOM_LEFT" mnemonicParsing="false" onMouseClicked="#notification_btn_clicked" prefHeight="83.0" prefWidth="176.0" text="Notifications">
+                     <graphic>
+                        <ImageView fitHeight="62.0" fitWidth="61.0" onMouseClicked="#_clicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Gui_Prototype/icons8-computer-chat-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="112.0" prefWidth="174.0">
+               <children>
+                  <Button id="sidebar" fx:id="customers_btn" alignment="BOTTOM_LEFT" mnemonicParsing="false" onMouseClicked="#customers_btn_clicked" prefHeight="83.0" prefWidth="176.0" text="Customers">
+                     <graphic>
+                        <ImageView fitHeight="73.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Gui_Prototype/icons8-customer-128.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="112.0" prefWidth="174.0">
+               <children>
+                  <Button id="sidebar" fx:id="sales_btn" alignment="BOTTOM_LEFT" mnemonicParsing="false" onMouseClicked="#sales_btn_clicked" prefHeight="83.0" prefWidth="176.0" text="Sales">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="73.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Gui_Prototype/icons8-land-sales-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></VBox>
+   </left>
+   <top>
+      <AnchorPane id="frame" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="107.0" fitWidth="109.0" layoutX="23.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="10.0">
+               <image>
+                  <Image url="@Gui_Prototype/MyFuelLogoFinal.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="745.0" prefHeight="120.0" prefWidth="176.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button id="logout" fx:id="logout_btn" layoutX="100.0" layoutY="81.0" mnemonicParsing="false" onMouseClicked="#logout_btn_clicked" text="Log Out" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="81.0" />
+                  <Label alignment="CENTER" layoutX="3.0" layoutY="34.0" text="Hello,Yogev Cohen" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="3.0" layoutY="14.0" text="Marketing Agent" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="30.0">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button id="Regular_button" fx:id="help_btn" layoutX="14.0" layoutY="81.0" mnemonicParsing="false" onMouseClicked="#help_btn_clicked" prefHeight="25.0" prefWidth="64.0" text="Help" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="173.0" layoutY="37.0" text="Customers" textFill="WHITE" AnchorPane.leftAnchor="173.0" AnchorPane.topAnchor="37.0">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane id="main" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="26.0" prefHeight="129.0" prefWidth="532.0" text="Welcome, Yogev Cohen" textFill="#1985a1">
+               <font>
+                  <Font name="Aharoni Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="89.0" prefHeight="120.0" prefWidth="429.0" text="Your last login was on 19.05.20, 13:40" wrapText="true">
+               <font>
+                  <Font name="Aharoni Bold" size="40.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="344.0" fitWidth="314.0" layoutX="469.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Gui_Prototype/MyFuelLogoFinal.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

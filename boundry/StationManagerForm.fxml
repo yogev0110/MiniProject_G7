@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.common.controllers.StationManagerController">
+   <left>
+      <VBox id="frame" alignment="TOP_CENTER" prefHeight="547.0" prefWidth="166.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="116.0" prefWidth="174.0">
+               <children>
+                  <Button id="sidebar" fx:id="main_btn" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#main_btn_clicked" prefHeight="83.0" prefWidth="176.0" style="-fx-background-color: #1985A1;" text="Menu">
+                     <graphic>
+                        <ImageView fitHeight="64.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/icons8-menu-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="107.0" prefWidth="174.0">
+               <children>
+                  <Button id="sidebar" fx:id="report_btn" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#report_btn_clicked" prefHeight="83.0" prefWidth="176.0" text="Reports">
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/icons8-business-report-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="110.0" prefWidth="174.0">
+               <children>
+                  <Button id="sidebar" fx:id="notification_btn" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#notification_btn_clicked" prefHeight="83.0" prefWidth="176.0" text="Notifications">
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/icons8-computer-chat-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="112.0" prefWidth="174.0">
+               <children>
+                  <Button id="sidebar" fx:id="station_btn" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#station_btn_clicked" prefHeight="83.0" prefWidth="176.0" text="Station">
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/icons8-fire-station-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="110.0" prefWidth="174.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></VBox>
+   </left>
+   <top>
+      <HBox id="frame" alignment="BOTTOM_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="106.0" prefWidth="950.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="0.0" prefHeight="106.0" prefWidth="1500.0">
+               <right>
+                  <Button id="logout" fx:id="logout_btn" mnemonicParsing="false" onMouseClicked="#logout_btn_clicked" prefHeight="31.0" prefWidth="84.0" text="Log out" BorderPane.alignment="CENTER_RIGHT">
+                     <BorderPane.margin>
+                        <Insets right="15.0" top="40.0" />
+                     </BorderPane.margin>
+                  </Button>
+               </right>
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="104.0" fitWidth="105.0" layoutX="43.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/MyFuelLogoFinal.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </left>
+            </BorderPane>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane id="main" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </AnchorPane>
+   </center>
+</BorderPane>
